@@ -9,12 +9,24 @@ background-repeat: no-repeat;
 table{
 height:110;
 width:500;
-margin-top:200;
-margin-left:300;
+margin-top:50;
+margin-left:250;
 }
+    span { font-size: 50px;
+             alignment-adjust: central;
+             border-bottom-style: dotted;
+             text-shadow: 5px 2px 2px #333;
+             color: #5800ff;      
+             align: center;
+    }
+    select{
+        height: 50px;
+        text-align: center;   
+     }
 </style>
 </head>
 <body class="bg">
+<<<<<<< HEAD
 <table>
   <tr><td><font size="10" color="blue">Please select User Type</font></td></tr>
   <tr><td>
@@ -27,4 +39,38 @@ margin-left:300;
   </ul>
   </td></tr>
 </table>
+=======
+<form action="login.html" method='POST'>
+        <table width="100" height="100">
+  <tr>
+     <td align="center" colspan="2">            <span>LOGIN HERE</span> </td>
+   </tr>
+   <tr>
+     <td> <font size="10"y>Type of user</font></td>
+      <td>
+         <select size="1">
+             <option>-------------Select--------------</option>
+             <option>Super Admin</option>
+             <option>Admin</option>
+             <option>State Supervisor</option>
+         </select>
+     </td>
+  </tr><tr>
+     <td> <font size="5">Name*</font></td>
+  </tr>
+  <tr>
+     <td colspan="2"><input style="height:30px;font-size:14pt;" type="text" name="uname" size="50" autofocus required></td>
+  </tr>
+  <tr>
+     <td><font size="5">Password*</font></td>
+  </tr>
+  <tr>
+     <td colspan="2"><input style="height:30px;font-size:14pt;" type="password" name="pass" size="50" required></td>
+  </tr>
+  <tr>
+     <td align="right"> <input type="image" src="go.jpg" alt="Submit" width="150" height="60"></td>
+  </tr>
+    </table>
+</form>
+>>>>>>> origin/master
 </body>
