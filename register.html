@@ -1,9 +1,79 @@
 <html>
 <head>
-
+<style>
+.bg{
+  background-size: 100%,100%;
+background-repeat: no-repeat;
+    
+}
+table{
+height:110;
+width:500;
+margin-top:50;
+margin-left:250;
+}
+    td { font-size: 25;
+    }
+</style>
+<script src="jquery-1.6.2.min.js"></script>
+<script src="jquery-ui-1.8.15.custom.min.js"></script>
+<link rel="stylesheet" href="jqueryCalendar.css">
+<script>
+                jQuery(function() {
+                                jQuery( "#datepicker" ).datepicker();
+                });
+                </script>
 </head>
-<body>
-<h1>HERE USER WILL GET REGISTRATION FORM<h1>
-<h1>HERE USER WILL GET REGISTRATION FORM<h1>
+<body background="bg1.jpg" class="bg">
+<form action="login.html" method='POST'>
+<table>
+      <tr><td colspan="2" align="center"><font size="10" color="blue"><u>Registration Page</u></font></td></tr>
+    <tr><td></td></tr>
+  <tr>
+     <td> Name :</td>
+       <td><input style="height:30px;font-size:14pt;" type="text" name="uname" size="40" autofocus required placeholder="your name here"></td>
+  </tr>
+  <tr>
+     <td>Password :</td>
+     <td><input style="height:30px;font-size:14pt;" type="password" name="pass" size="40" required placeholder="password here"></td>
+  </tr>
+  <tr>
+  <td align="left">Email id :</td>
+  <td align="left"><input style="height:30px;font-size:14pt;" type="text" id="email" size="40" autofocus required placeholder="your registered E-mail here"></td>
+ </tr> 
+ <tr>
+  <td align="left">Phone no</td>
+  <td align="left"><input style="height:30px;font-size:14pt;" type="text" id="pno" size="40" autofocus required placeholder="phone number with out 0 and +91"></td>
+ </tr> 
+ <tr>
+  <td align="left">sex :</td>
+  <td align="left"><input type="radio" name="radio" autofocus >Male<br/>
+      <input type="radio" name="radio" autofocus >Female<br/>
+ </td>
+ </tr>
+ <tr>
+  <td align="left">DOB :</td>
+  <td align="left"><input type="text" id="datepicker"> (dd/mm/yyyy)</td>
+ </tr> 
+ <tr>
+  <td align="left">languages known :</td>
+  <td align="left">
+   <input type="checkbox" name="radio" >english<br/>
+   <input type="checkbox" name="radio" >telugu<br/>
+   <input type="checkbox" name="radio" >hindi<br/>
+   <input type="checkbox" name="radio" >tamil<br/>
+ </td>
+ </tr>
+ <tr>
+  <td align="left">address :</td>
+  <td align="left">
+   <textarea rows="5" cols="40"></textarea>
+  </td>
+ </tr> 
+  <tr>
+      <td></td>
+     <td align="right"> <input type="image" src="regb.jpg" alt="Submit" width="150" height="60"></td>
+  </tr>
+</table>
+</form>
 </body>
-</html>

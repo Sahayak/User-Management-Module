@@ -1,20 +1,70 @@
+<!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-    margin: 0;            /* Reset default margin */
-}
-iframe {
-    display: block;       /* iframes are inline by default */
-    border: none;         /* Reset default border */
 
-}
-</style>
+   <meta charset='utf-8'>
+
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <link rel="stylesheet" href="styles.css">
+
+   <title>Sahayak Social Foundation</title>
+   
 </head>
-<body>
-<iframe src="menus.html" width="100%" height="500" scrolling="no" id="frame1" name="frame1">
-</iframe>
-<iframe width="100%" height="90%" src="home.html" id="frame2" name="frame2" style="position:absolute;top:100px;">
-</iframe>
+
+   <body>
+   
+
+<div id='cssmenu'>
+    
+<ul>
+   <li><a href='home.html' target="frame2"><span>Home</span></a></li>
+        
+   <li class='active has-sub'><a href='services.html' target="frame2"><span>Services</span></a>
+
+    <ul>
+         
+	   <li class='has-sub'><a href='#' target="frame2"><span>Service 1</span></a>
+
+            <ul>
+
+               <li><a href='#' target="frame2"><span>Sub Services 1</span></a></li>
+
+               <li class='last'><a href='#' target="frame2"><span>Sub servuce 2</span></a></li>
+
+            </ul>
+
+         </li>
+
+         <li class='has-sub'><a href='#' target="frame2"><span>Service 2</span></a>
+
+            <ul>
+
+               <li><a href='#' target="frame2"><span>Sub Services 1</span></a></li>
+
+               <li class='last'><a href='#' target="frame2"><span>Sub Services 2</span></a></li>
+
+            </ul>
+
+         </li>
+
+      </ul>
+
+   </li>
+
+   <li><a href='about.html' target="frame2"><span>About</span></a></li>
+
+   <li><a href='login.html' target="frame2"><span>Login</span></a></li>
+
+   <li><a href='register.html' target="frame2"><span>Register</span></a></li>
+
+   <li><a href='contact.html' target="frame2"><span>Contact</span></a></li>
+
+   </ul>
+
+</div>
+<iframe width="100%" height="700px" frameborder=0 src="home.html" name="frame2"></iframe>
 </body>
-</html>                                		
+</html>
