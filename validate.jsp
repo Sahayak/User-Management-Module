@@ -21,7 +21,7 @@ while(rs.next()){
 String s1=rs.getString("name");
 String s2=rs.getString("password");
 if(name.equals(s1)&&pass.equals(s2))
-{ out.println("<h1>Hai "+name+" you are an Registered User</h1>");
+{ out.println("<h1>Hai "+name+" you are a Registered User</h1>");
   count=1;
   break;
 }
