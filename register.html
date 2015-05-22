@@ -14,7 +14,8 @@ margin-left:250;
 }
     td { font-size: 25;
     }
-       span { font-size: 50px;
+      
+     span1 { font-size: 50px;
              alignment-adjust: central;
              border-bottom-style: dotted;
              text-shadow: 5px 2px 2px #333;
@@ -26,16 +27,16 @@ margin-left:250;
 <script src="jquery-ui-1.8.15.custom.min.js"></script>
 <link rel="stylesheet" href="jqueryCalendar.css">
 <script>
-                jQuery(function() {
-                                jQuery( "#datepicker" ).datepicker();
-                });
-                </script>
+    jQuery(function () {
+        jQuery("#datepicker").datepicker();
+    });
+</script>
 </head>
 <body background="bg1.jpg" class="bg">
-<form action="login.html" method='POST'>
+<form action="register.jsp" method='POST' name="form1">
 <table>
       <tr>
-     <td align="center" colspan="2"><span>REGISTR HERE</span> </td>
+     <td align="center" colspan="2"><span1>REGISTR HERE</span1> </td>
    </tr>
   <tr>
      <td> Name :</td>
@@ -47,11 +48,11 @@ margin-left:250;
   </tr>
   <tr>
   <td align="left">Email id :</td>
-  <td align="left"><input style="height:30px;font-size:14pt;" type="text" id="email" size="40" autofocus required placeholder="your registered E-mail here"></td>
+  <td align="left"><input style="height:30px;font-size:14pt;" type="text" name="email" size="40" autofocus required placeholder="your registered E-mail here" onblur="email()"></td>
  </tr> 
  <tr>
   <td align="left">Phone no</td>
-  <td align="left"><input style="height:30px;font-size:14pt;" type="text" id="pno" size="40" autofocus required placeholder="phone number with out 0 and +91"></td>
+  <td align="left"><input style="height:30px;font-size:14pt;" type="text" name="pno" id="pno" size="40" autofocus required placeholder="phone number with out 0 and +91"></td>
  </tr> 
  <tr>
   <td align="left">sex :</td>
